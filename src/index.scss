@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+
+$primary: rgb(219, 191, 235);
+$secondary: rgb(204, 150, 236);
+* {
+  font-family: "Kosugi Maru", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  box-shadow: 4px 4px 8px grey;
+  border-radius: 20px;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__appname {
+    font-size: 2rem;
+    color: $secondary;
+  }
+  &__credit {
+    color: rgb(13, 111, 209);
+  }
+}
+
+.input {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__text,
+  &__button {
+    padding: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+  }
+  &__text:focus {
+    outline: 2px solid $primary;
+    border: none;
+  }
+  &__button {
+    background-color: $primary;
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+  }
+  &__button:hover {
+    background-color: $secondary;
+    color: white;
+  }
+}
+.activity {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+img {
+  width: 100px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
