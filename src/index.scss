@@ -2,6 +2,7 @@
 
 $primary: rgb(219, 191, 235);
 $secondary: rgb(204, 150, 236);
+$secondary_darker :  rgb(197, 123, 239);
 * {
   font-family: "Kosugi Maru", sans-serif;
   padding: 0px;
@@ -13,7 +14,7 @@ $secondary: rgb(204, 150, 236);
   position: relative;
   box-shadow: 4px 4px 8px grey;
   border-radius: 20px;
-  width: 600px;
+  width: 700px;
   height: auto;
   margin: auto;
   margin-top: 30px;
@@ -27,6 +28,7 @@ $secondary: rgb(204, 150, 236);
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   &__appname {
     font-size: 2rem;
@@ -55,12 +57,16 @@ $secondary: rgb(204, 150, 236);
   &__button {
     background-color: $primary;
     transition-property: background-color color;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    &:hover {
+      background-color: $secondary;
+      color: white;
+    }
+    &:active{
+      background: $secondary_darker;
+    }
   }
-  &__button:hover {
-    background-color: $secondary;
-    color: white;
-  }
+  
 }
 .activity {
   font-size: 1.5rem;

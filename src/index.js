@@ -15,7 +15,6 @@ const App = () => {
       try {
         const result = await fetch(BASE_URL, option);
         const data = await result.json();
-        console.log(data.activity);
         setActivity(data.activity);
       } catch (error) {
         console.log(error);
@@ -36,7 +35,7 @@ const App = () => {
         alt="kaoruko-pic"
       ></img>
       <div className="header">
-        <p className="header__appname">暇、何をすればいい？</p>
+        <p className="header__appname">暇、なんか楽しいことない？</p>
         <p className="header__credit">Powered by https://www.boredapi.com/</p>
       </div>
       {/* Input */}
