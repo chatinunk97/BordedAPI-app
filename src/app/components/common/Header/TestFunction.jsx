@@ -3,11 +3,11 @@ import useFuckingContext from "../../../../hooks/useContext";
 
 function TestFunction (){
 
-    const showText = useFuckingContext()
+    const {testValue} = useFuckingContext()
     return(
         <div>
             <h1>WOWZA FUNCTION</h1>
-            <p>{`=====> ${showText}`}</p>
+            <p>{`=====> ${testValue}`}</p>
         </div>
     )
 }
